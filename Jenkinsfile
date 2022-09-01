@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test'
 	  bat '''
-          pmd.bat -d src/main -R customrule.xml -f text
+          pmd.bat -d src/main -R ruletest.xml -f text
 	  '''
         }
       }
