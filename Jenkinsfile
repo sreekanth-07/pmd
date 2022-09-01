@@ -5,6 +5,8 @@ pipeline {
       steps {
         script {
           echo 'test'
+		  bat '''
+		  pmd.bat -d src/main -R customrule.xml -f text
         }
       }
     }
