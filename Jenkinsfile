@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test'
 	  bat '''
-          pmd -d src/main -R ruletest.xml -f text
+          pmd.run -d src/main -R ruletest.xml -f text
 	  '''
         }
       }
