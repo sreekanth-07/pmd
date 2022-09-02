@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test'
 	  bat '''
-          pmd.bat -d src/main -R basic.xml -f C:/Users/002XJB744/.jenkins/workspace/output.txt
+          pmd.bat -d src/main -R basic.xml -f output.txt
 	  '''
         }
       }
