@@ -8,6 +8,7 @@ pipeline {
 	  @echo off 
 	  bat '''
           pmd.bat -d src/main -R basic.xml -f text >> output.txt
+	  echo $(cat output.txt | sed 's/a/1') > output.txt
 	  '''
         }
       }
