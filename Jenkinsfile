@@ -5,8 +5,9 @@ pipeline {
       steps {
         script {
           echo 'test'
+	  @echo off 
 	  bat '''
-          pmd.bat -d src/main -R basic.xml -f text
+          pmd.bat -d src/main -R basic.xml -f text >> output.txt
 	  '''
         }
       }
