@@ -5,8 +5,8 @@ pipeline {
       steps {
         script {
           echo 'test' 
-	  sh '''
-          run.sh -d src/main -R basic.xml -f text
+	  bat '''
+          pmd.bat -d src/main -R basic.xml -f text
 	  '''
         }
       }
