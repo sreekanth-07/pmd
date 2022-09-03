@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test' 
 	  bat '''
-          pmd.bat -d src/main -R basic.xml > output.txt
+          pmd.bat -d src/main -R basic.xml -f text
 	  '''
         }
       }
