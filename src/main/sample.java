@@ -11,6 +11,9 @@ public class GetCookiePrintAndSetValue {
     client.getParams().setParameter("j_username", "abc");
     client.getParams().setParameter("j_password", "pqr");
  
+    int a = 0; //unused variable 
+    String s = null;
+    s.equals("sreekanth");  // null pointer exception (should handle null check) 
     GetMethod method = new GetMethod("http://localhost:8080/");
     try{
       client.executeMethod(method);
