@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test' 
 	  sh '''
-          ./run.sh pmd -d src/main/sample.java  -R basic.xml -f text 
+          ./run.sh -d src/main  -R basic.xml -f text 
 	  '''
         }
       }
