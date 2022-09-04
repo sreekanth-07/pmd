@@ -9,7 +9,7 @@ The Basic ruleset contains a collection of good practices which should be follow
   </description>
 
     <!-- Rules, that have been moved into a category -->
-    <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop" deprecated="true" />
+    <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop"  />
     <rule ref="category/java/errorprone.xml/AvoidDecimalLiteralsInBigDecimalConstructor" deprecated="true" />
     <rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators" deprecated="true" />
     <rule ref="category/java/errorprone.xml/AvoidUsingOctalValues" deprecated="true" />
