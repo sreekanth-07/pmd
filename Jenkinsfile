@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test' 
 	  sh '''
-          ./run.sh -d src/main  -R basic.xml -f text 
+          ./run.bat -d src/main  -R basic.xml -f text 
 	  '''
         }
       }
