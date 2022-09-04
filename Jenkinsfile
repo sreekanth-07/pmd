@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           echo 'test' 
-	  sh '''
+	  pmd '''
           ./run.bat -d src/main  -R basic.xml -f text 
 	  '''
         }
