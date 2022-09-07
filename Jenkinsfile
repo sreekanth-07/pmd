@@ -3,7 +3,7 @@ pipeline {
   stages {
      stage('GitCheckout') {
         steps {
-            checkout 
+            checkout \
                 scm: [ $class : 'GitSCM', branches: [[name: '*/main']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'pmd-files']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sreekanth-07/pmd-files.git']]]
         }
     }
