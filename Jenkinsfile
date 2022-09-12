@@ -6,7 +6,7 @@ pipeline {
         script {
           echo 'test' 
 	  bat '''
-          pmd.bat -d src/main -R basic.xml -f text
+          pmd.bat -d ../src/main -R ../basic.xml -f text -r ../log.txt --fail-on-violation false
 	  '''
         }
       }
