@@ -5,8 +5,10 @@ pipeline {
       steps {
         script {
 	   withCredentials([string(credentialsId: 'slackoutput', variable: 'pmdslack')]) {
-           set +x
+           sh '''
+	   set +x
            curl -H 'Token: $pmdslack' https://some.api/
+	   '''
 		   }
           echo 'test' 
 	  bat '''
