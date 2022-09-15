@@ -38,5 +38,6 @@ The Basic ruleset contains a collection of good practices which should be follow
 
     <rule ref="category/java/design.xml/CollapsibleIfStatements" deprecated="true" />
     <rule ref="category/java/design.xml/SimplifiedTernary" deprecated="true" />
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
 
 </ruleset>
