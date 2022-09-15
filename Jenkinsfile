@@ -4,10 +4,6 @@ pipeline {
     stage('PMD Scan') {
       steps {
         script {
-	   withCredentials([string(credentialsId: 'slackoutput', variable: 'pmdslack')]) {
-	   set +x
-           curl -H 'Token: $pmdslack' https://slack.com/api/files.upload
-		   }
           echo 'test' 
 	  bat '''
 	  cd bin
