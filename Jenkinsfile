@@ -7,7 +7,7 @@ pipeline {
           echo 'test' 
 	  bat '''
 	  cd bin
-          pmd.bat -d ../src/main -R ../basic.xml -f csv -r ../log.csv --fail-on-violation false
+          pmd.bat -d ../src/main -R ../basic.xml -f csv -r ../log.csv 
 	  '''
         }
       }
