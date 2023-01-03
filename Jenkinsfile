@@ -21,8 +21,8 @@ stage("git-push") {
 		       withCredentials([string(credentialsId: 'git_token', variable: 'token')]) {
            
                     bat '''
-		     git config --global user.email "kokilavani688@gmail.com"
-                     git config --global user.name "kokilavani2610"
+		     git config --global user.email "kallepusreekanth7@gmail.com"
+                     git config --global user.name "sreekanth-07"
 		     
 		     git branch -a
 		     git checkout -b autodeploy
