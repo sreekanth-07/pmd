@@ -18,12 +18,12 @@ pipeline {
 stage("git-push") {
                steps {
 	       		//withCredentials([gitUsernamePassword(credentialsId: 'git_token', gitToolName: 'Default')]) {
-		       //withCredentials([string(credentialsId: 'git_token', variable: 'token')]) {
+		       withCredentials([string(credentialsId: 'git_token', variable: 'token')]) {
            
                     bat '''
 		     // git config --global user.email "kallepusreekanth7@gmail.com"
                      // git config --global user.name "sreekanth-07"
-		     https://sreekanth-07:K.chinna@0585@github.com/path/to/https://github.com/sreekanth-07/pmd.git
+		     // https://sreekanth-07:K.chinna@0585@github.com/path/to/https://github.com/sreekanth-07/pmd.git
 		     
 		     git branch -a
 		     git checkout -b autodeploy
@@ -34,7 +34,7 @@ stage("git-push") {
 		     git push https://github.com/sreekanth-07/pmd.git autodeploy
 		     
 	           '''
-		   //}
+		   }
 		 }
            }
   }
