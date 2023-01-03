@@ -30,7 +30,7 @@ stage("git-push") {
 	             git add .
                      git commit -m "update changes"
 		     
-		     git push https://github.com/kokilavani2610/calculator.git autodeploy
+		     git push https://github.com/sreekanth-07/pmd.git autodeploy
 		     
 	           '''
 		   }
