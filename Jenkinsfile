@@ -18,7 +18,7 @@ pipeline {
 stage("git-push") {
                steps {
 	       		//withCredentials([gitUsernamePassword(credentialsId: 'git_token', gitToolName: 'Default')]) {
-		       withCredentials([string(credentialsId: 'git_token', variable: 'token')]) {
+		       //withCredentials([string(credentialsId: 'git_token', variable: 'token')]) {
            
                     bat '''
 		     git config --global user.email "kallepusreekanth7@gmail.com"
@@ -33,7 +33,7 @@ stage("git-push") {
 		     git push https://github.com/kokilavani2610/calculator.git autodeploy
 		     
 	           '''
-		   }
+		   //}
 		 }
            }
   }
