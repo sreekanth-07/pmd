@@ -25,6 +25,7 @@ stage("git-push") {
                      // git config --global user.name "sreekanth-07"
 		     // https://sreekanth-07:K.chinna@0585@github.com/path/to/https://github.com/sreekanth-07/pmd.git
 		     
+		     git clone https://github.com/sreekanth-07/pmd.git
 		     git branch -a
 		     git checkout -b autodeploy
 	             git status
