@@ -27,12 +27,12 @@ stage("git-push") {
 		     
 		     git clone https://github.com/sreekanth-07/pmd.git
 		     git branch -a
-		     git checkout -b autodeploy
+		     // git checkout -b autodeploy
 	             git status
 	             git add .
                      git commit -m "update changes"
 		     
-		     git push https://github.com/sreekanth-07/pmd.git autodeploy
+		     git push https://github.com/sreekanth-07/pmd.git pmd
 		     
 	           '''
 		   }
