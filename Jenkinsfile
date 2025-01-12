@@ -10,6 +10,13 @@ pipeline {
                 }
             }
         }
+          stage('Eco') {
+            steps {
+                script {
+                    sh 'echo 'this is sneha''
+                }
+            }
+        }
         stage('Access File') {
             steps {
                 script {
