@@ -14,6 +14,7 @@ pipeline {
             steps {
                 script {
                     fileExists 'sample.txt'
+                    sh 'echo "testing success"'
                 }
             }
         }
