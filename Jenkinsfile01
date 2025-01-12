@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                script {
+                    // Clones the repository to the workspace
+                    git url: 'https://github.com/sreekanth-07/pmd-pipeline.git'
+                }
+            }
+        }
+        
+        stage('Testing') {
+            steps {
+                script {
+                    // Debugging: List files in the current directory
+                    sh 'pwd'        // Print the current directory
+                    sh 'ls -al'     // List files in the current directory
+                    
+                    // Check if sample1.txt is in the current directory
+                    sh 'cat sample1.txt' // This will print the content of sample1.txt if it exists
+                }
+            }
+        }
+        
+        stage('Eco') {
+            steps {
+                script {
+                    sh 'echo "this is sneha"'
+                }
+            }
+        }
+        
+        stage('Access File') {
+            steps {
+                script {
+                    sh 'echo "inside gradle stage"'
+                    sh "pwd"
+                    // Ensure you're using the correct path if sample.txt exists
+                    def fileContent = readFile './sample.txt'
+                    echo fileContent // Prints the content of sample.txt
+                }
+            }
+        }
+    }
+}
