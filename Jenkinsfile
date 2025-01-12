@@ -16,7 +16,7 @@ pipeline {
                     //fileExists 'sample.txt'
                    // def fileContent = readFile './sample1.txt'
                     sh 'pwd'        // Print the current directory
-                    sh 'ls -al
+                    sh 'ls -al'
                     sh 'cat sample1.txt'
                 }
             }
