@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     fileExists 'sample.txt'
-                    sh 'cat sample1'
+                    sh 'cat ./sample1'
                 }
             }
         }
