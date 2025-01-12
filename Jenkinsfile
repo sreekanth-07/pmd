@@ -13,9 +13,9 @@ pipeline {
          stage('testing') {
             steps {
                 script {
-                    fileExists 'sample.txt'
-                    def fileContent = readFile './sample1'
-                    sh 'cat sample1'
+                    //fileExists 'sample.txt'
+                   // def fileContent = readFile './sample1.txt'
+                    sh 'cat sample1.txt'
                 }
             }
         }
