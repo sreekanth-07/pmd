@@ -14,7 +14,8 @@ pipeline {
             steps {
                 script {
                     fileExists 'sample.txt'
-                    sh 'cat ./sample1'
+                    def fileContent = readFile './sample1'
+                    sh 'cat sample1'
                 }
             }
         }
