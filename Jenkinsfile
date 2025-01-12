@@ -10,6 +10,13 @@ pipeline {
                 }
             }
         }
+         stage('testing') {
+            steps {
+                script {
+                    fileExists 'sample.txt'
+                }
+            }
+        }
           stage('Eco') {
             steps {
                 script {
