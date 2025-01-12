@@ -13,7 +13,7 @@ pipeline {
           stage('Eco') {
             steps {
                 script {
-                    sh 'echo 'this is sneha''
+                    sh 'echo "this is sneha"'
                 }
             }
         }
