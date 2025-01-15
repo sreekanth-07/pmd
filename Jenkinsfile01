@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run build commands (e.g., Maven, Gradle)
-                sh './build.sh'  // or 'mvn clean install' for Maven
+                sh 'mvn clean install'
             }
         }      
     }
