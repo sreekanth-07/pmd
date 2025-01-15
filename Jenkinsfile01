@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Clones the repository to the workspace
-                    git url: 'https://github.com/sreekanth-07/pmd-pipeline.git'
+                    git url: 'https://github.com/sreekanth-07/pmd.git'
                 }
             }
         }
