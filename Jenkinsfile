@@ -6,7 +6,9 @@ pipeline {
             steps {
                 script {
                     // Clones the repository to the workspace
-                    git url: 'https://github.com/sreekanth-07/pmd.git'
+                    //git url: 'https://github.com/sreekanth-07/pmd.git'
+                     checkout scmGit(branches: [[name: 'main']], 
+                                userRemoteConfigs: [[url: 'https://github.com/sreekanth-07/pmd.git']])
                 }
             }
         }
